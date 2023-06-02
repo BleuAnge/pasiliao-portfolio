@@ -2,10 +2,18 @@
 
 @layer components {
     .main-body {
-        @apply flex flex-row justify-center items-center
+        @apply pt-32 px-10 
+    }
+
+    .title-container {
+        @apply w-fit 
     }
 
     .main-title {
-        @apply text-3xl text-white font-bold
+        @apply font-lemon_jelly text-9xl text-center 
+    }
+
+    .main-content {
+        @apply font-scholarly_ambitious text-3xl text-center
     }
 }

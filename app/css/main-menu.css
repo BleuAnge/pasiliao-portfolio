@@ -1,6 +1,10 @@
 @tailwind components;
 
 @layer components {
+    .menu-menu-container {
+        @apply overflow-hidden
+    }
+    
     .main-menu-title {
         @apply  w-fit h-fit absolute top-5 left-20 
                 border-t-2 border-l-2 border-white 
@@ -12,6 +16,7 @@
                 border-b-8 border-r-8 border-white
                 right-1/2 translate-x-1/2 top-[50%] 
                 rounded-xl my-8 px-4 py-8 pt-20
+                transition-all duration-300
     }
 
     .menu-left {

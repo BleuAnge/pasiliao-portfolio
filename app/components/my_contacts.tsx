@@ -1,13 +1,15 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import Link from "next/link";
 import "../css/utility.css";
 
 export default function MyContacts() {
     return (
-        <div className="item-container">
-            <div>
-                <h1>Contact Number: </h1>
-                <p className="text-contact">+63 9566386682</p>
-            </div>
+        <motion.div initial={{ opacity : 0 , x : -80 }}
+                    animate={{ opacity : 1 , x : 0 , transition : { delay : 0.3 } }}
+                    exit={{ opacity : 0 , x : -80 }}
+                    className="item-container">
             <div>
                 <h1>Email: </h1>
                 <p className="text-contact">jaredpasiliao52@gmail.com</p>
@@ -24,6 +26,6 @@ export default function MyContacts() {
                     <p className="text-contact">Jared Dennis F. Pasiliao</p>
                 </Link>
             </div>
-        </div>
+        </motion.div>
     )
 }

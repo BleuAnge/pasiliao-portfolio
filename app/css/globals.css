@@ -22,4 +22,8 @@
     @apply  bg-gradient-to-b from-voldemort to-velvet 
             h-full bg-no-repeat bg-fixed text-white relative
   }
+
+  body::-webkit-scrollbar {
+    @apply hidden
+  }
 }
