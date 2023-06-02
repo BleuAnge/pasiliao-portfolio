@@ -12,6 +12,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'lost-in-space' : '#003663',
+        'win-95-desktop' : '#008686',
+        'cucumber' : '#006500',
+        'medicine-green' : '#007d36',
+      },
+      fontFamily: {
+        'ocean' : 'Optima',
+        'lemon_jelly' : 'LemonJelly',
+      },
     },
   },
   plugins: [],

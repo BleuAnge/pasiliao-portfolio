@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* , *::before , *::after {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "LemonJelly";
+  src: url("../fonts/LemonJelly.ttf");
+}
+
+@layer components{
+  body {
+    @apply  bg-gradient-to-b from-lost-in-space to-win-95-desktop 
+            h-full bg-no-repeat bg-fixed text-white relative
+  }
+}

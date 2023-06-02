@@ -1,0 +1,11 @@
+@tailwind components;
+
+@layer components {
+    .main-body {
+        @apply flex flex-row justify-center items-center
+    }
+
+    .main-title {
+        @apply text-3xl text-white font-bold
+    }
+}
