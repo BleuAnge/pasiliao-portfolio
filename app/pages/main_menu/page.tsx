@@ -1,6 +1,14 @@
+'use client'
+
+import { useState } from 'react';
 import '../../css/main-menu.css';
+import AboutMe from '@/app/components/about_me';
+import MyProjects from '@/app/components/my_projects';
+import MyContacts from '@/app/components/my_contacts';
 
 export default function MainMenu(){
+    const [ currentSlide , setSlide ] = useState("about_me")
+
     return (
         <div className='relative'>
             <div className='main-menu-title'>
@@ -8,15 +16,29 @@ export default function MainMenu(){
             </div>
             <div className="main-menu-body">
                 <div className="menu-left">
-                    <h1 className="info text-5xl text-white font-lemon_jelly">This is a Placeholder</h1>
+                    {
+                        currentSlide === "about_me" ?
+                            <AboutMe /> :
+                        currentSlide === "my_projects" ?
+                            <MyProjects /> :
+                        currentSlide === "my_contacts" ?
+                            <MyContacts />
+                        : null
+                    }
                 </div>
                 <div className="menu-right">
-                    <h1 className="about-me text-5xl text-white font-lemon_jelly">About Me</h1>
-                    <h1 className="my-projects text-5xl text-white font-lemon_jelly">My Projects</h1>
-                    <h1 className="contact-me text-5xl text-white font-lemon_jelly">Contact Me</h1>
+                    <button onClick={() => setSlide("about_me")}>
+                        <h1 className="about-me text-5xl text-white font-lemon_jelly">About Me</h1>
+                    </button>
+                    <button onClick={() => setSlide("my_projects")}>
+                        <h1 className="my-projects text-5xl text-white font-lemon_jelly">My Projects</h1>
+                    </button>
+                    <button onClick={() => setSlide("my_contacts")}>
+                        <h1 className="contact-me text-5xl text-white font-lemon_jelly">Contact Me</h1>
+                    </button>
+                    
                 </div>
             </div>
-        </div>
-        
+        </div>       
     )
 }

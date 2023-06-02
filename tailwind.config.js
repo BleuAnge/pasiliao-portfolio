@@ -13,14 +13,14 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'lost-in-space' : '#003663',
-        'win-95-desktop' : '#008686',
-        'cucumber' : '#006500',
-        'medicine-green' : '#007d36',
+        'voldemort' : '#33115c',
+        'velvet' : '#6a0040',
+        'infinity-light' : '#001241',
       },
       fontFamily: {
         'ocean' : 'Optima',
         'lemon_jelly' : 'LemonJelly',
+        'scholarly_ambitious' : 'ScholarlyAmbitious',
       },
     },
   },

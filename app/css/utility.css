@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components{
+    .item-container {
+        @apply flex flex-col gap-8
+    }
+
+    .text-title {
+        @apply font-lemon_jelly text-5xl text-center
+    }
+
+    .text-contact {
+        @apply pl-4 font-sans text-3xl
+    }
+
+    p {
+        @apply font-sans text-4xl text-white 
+    }
+}

@@ -3,22 +3,27 @@
 @layer components {
     .main-menu-title {
         @apply  w-fit h-fit absolute top-5 left-20 
-                border-t-2 border-l-2 border-medicine-green p-4
+                border-t-2 border-l-2 border-white 
+                rounded-lg p-4
     }
 
     .main-menu-body {
         @apply  w-[90vw] h-[90vh] absolute flex
-                border-b-4 border-r-4 border-medicine-green
+                border-b-8 border-r-8 border-white
                 right-1/2 translate-x-1/2 top-[50%] 
-                my-8 px-4 pt-20
+                rounded-xl my-8 px-4 py-8 pt-20
     }
 
     .menu-left {
-        @apply w-1/2 p-4
+        @apply w-3/4 p-8 overflow-y-auto
     }
 
     .menu-right {
-        @apply w-1/2 flex flex-col gap-12 p-4 justify-end
+        @apply w-1/4 flex flex-col gap-12 justify-end
                 items-end
+    }
+
+    .menu-left::-webkit-scrollbar {
+        @apply hidden
     }
 }
