@@ -20,7 +20,7 @@
     }
 
     .menu-left {
-        @apply w-3/4 sm:p-4 lg:p-8 overflow-y-auto
+        @apply w-3/4 p-8 overflow-y-auto
     }
 
     .menu-right {
