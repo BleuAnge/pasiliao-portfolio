@@ -6,7 +6,7 @@
     }
     
     .main-menu-title {
-        @apply  w-fit h-fit absolute top-5 left-20 
+        @apply  w-fit h-fit absolute top-5 sm:left-12 lg:left-20 
                 border-t-2 border-l-2 border-white 
                 rounded-lg p-4
     }

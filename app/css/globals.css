@@ -19,7 +19,7 @@
 
 @layer components{
   body {
-    @apply  bg-gradient-to-b from-voldemort to-velvet 
+    @apply  bg-gradient-to-b from-midnight-melachonly to-windstrom 
             h-full bg-no-repeat bg-fixed text-white relative
   }
 

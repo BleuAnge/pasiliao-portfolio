@@ -16,6 +16,8 @@ module.exports = {
         'voldemort' : '#33115c',
         'velvet' : '#6a0040',
         'infinity-light' : '#001241',
+        'midnight-melachonly' : '#001d5a',
+        'windstrom' : '#6e9ad0',
       },
       fontFamily: {
         'ocean' : 'Optima',

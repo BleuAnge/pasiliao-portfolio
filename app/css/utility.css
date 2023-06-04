@@ -1,6 +1,12 @@
 @tailwind components;
 
 @layer components{
+    h1 {
+        @apply font-scholarly_ambitious text-3xl
+    }
+    td {
+        @apply mx-auto 
+    }
     .item-container {
         @apply flex flex-col gap-8
     }
@@ -9,11 +15,15 @@
         @apply font-lemon_jelly text-5xl text-center
     }
 
+    .text-label {
+        @apply font-scholarly_ambitious sm:text-xl lg:text-3xl
+    }
+
     .text-contact {
-        @apply pl-4 font-sans text-3xl
+        @apply pl-4 font-sans sm:text-xl lg:text-3xl
     }
 
     p {
-        @apply font-sans text-4xl text-white 
+        @apply font-sans sm:text-lg lg:text-4xl text-white 
     }
 }
